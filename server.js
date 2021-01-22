@@ -12,9 +12,7 @@ const PORT = process.env.PORT || 5000;
 
 connectDB();
 
-if (process.env.NODE_ENV === 'dev') {
-  app.use(cors());
-}
+
 
 app.use(express.json());
 app.use(cors());
